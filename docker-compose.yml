@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  db:
+    image: postgres:13-alpine
+    ports:
+      - 5301:5432
+    volumes:
+      - artDb:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: randomDbPass :)
+      POSTGRES_USER: admin
+      POSTGRES_DB: art
+
+volumes:
+  artDb:
