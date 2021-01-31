@@ -12,7 +12,7 @@
     "start": "nest start --watch",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main",
+    "start:prod": "node dist/src/main",
     "db": " docker-compose run --service-ports --name artDb -d db || docker start artDb",
     "seed": "ts-node -r tsconfig-paths/register src/seed/seed.ts",
     "seed:prod": "node dist/src/seed/seed.js",
