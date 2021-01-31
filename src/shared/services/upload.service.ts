@@ -7,7 +7,6 @@ export const getFileName = (req: Request, file, callback) => {
   const id = uuid();
 
   const [type, fileExtName] = file.mimetype.split('/');
-  console.log('Type: ', type);
 
   if (type !== 'image') {
     callback(new BadRequestException('Only images can be uploaded'));
