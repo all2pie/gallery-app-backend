@@ -6,6 +6,6 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    return 'Hi, form Art App Backend';
+    return 'Hi, form Art App Backend :)';
   }
 }
